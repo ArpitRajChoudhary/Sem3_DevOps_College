@@ -1,0 +1,35 @@
+System Report - Thu Oct 16 09:51:25 AM IST 2025
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           1.6G  2.7M  1.6G   1% /run
+/dev/nvme0n1p2  468G  131G  313G  30% /
+tmpfs           7.7G     0  7.7G   0% /dev/shm
+tmpfs           5.0M   12K  5.0M   1% /run/lock
+efivarfs        438K  375K   59K  87% /sys/firmware/efi/efivars
+/dev/nvme0n1p1  1.1G   35M  1.1G   4% /boot/efi
+tmpfs           1.6G  308K  1.6G   1% /run/user/1000
+
+Memory:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       3.6Gi       8.6Gi       543Mi       3.8Gi        11Gi
+Swap:          4.0Gi          0B       4.0Gi
+
+CPU:
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           39 bits physical, 48 bits virtual
+
+Top Memory:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+arpit-r+    5660  3.5  3.7 3103572 595560 ?      Sl   09:43   0:16 /snap/firefox/7024/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:44925 -prefMapHandle 1:276116 -jsInitHandle 2:224660 -parentBuildID 20251010015306 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {6c57f7ff-75c6-4ad5-a6bb-6758dbdf28f7} -parentPid 5067 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7024/usr/lib/firefox/omni.ja -appomni /snap/firefox/7024/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7024/usr/lib/firefox/browser 9 tab
+arpit-r+    5067  2.6  3.1 12189744 510128 ?     Sl   09:43   0:12 /snap/firefox/7024/usr/lib/firefox/firefox
+arpit-r+    5993  1.8  3.1 1369168 502232 ?      Sl   09:43   0:08 /snap/libreoffice/358/lib/libreoffice/program/soffice.bin --writer /home/arpit-raj-choudhary/Downloads/Shell Scripting Task(3).docx
+mysql       1695  0.7  2.4 2310736 397588 ?      Ssl  09:39   0:05 /usr/sbin/mysqld
+
+Top CPU:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+arpit-r+    5660  3.5  3.7 3103572 595560 ?      Sl   09:43   0:16 /snap/firefox/7024/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:44925 -prefMapHandle 1:276116 -jsInitHandle 2:224660 -parentBuildID 20251010015306 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {6c57f7ff-75c6-4ad5-a6bb-6758dbdf28f7} -parentPid 5067 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7024/usr/lib/firefox/omni.ja -appomni /snap/firefox/7024/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7024/usr/lib/firefox/browser 9 tab
+arpit-r+    5067  2.6  3.1 12189744 510128 ?     Sl   09:43   0:12 /snap/firefox/7024/usr/lib/firefox/firefox
+arpit-r+    5993  1.8  3.1 1369168 502232 ?      Sl   09:43   0:08 /snap/libreoffice/358/lib/libreoffice/program/soffice.bin --writer /home/arpit-raj-choudhary/Downloads/Shell Scripting Task(3).docx
+arpit-r+    3128  1.7  2.3 5020964 370360 ?      Ssl  09:39   0:12 /usr/bin/gnome-shell
