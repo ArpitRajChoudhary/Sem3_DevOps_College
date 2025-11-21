@@ -1,0 +1,36 @@
+PING google.com (216.58.200.174) 56(84) bytes of data.
+64 bytes from del11s06-in-f14.1e100.net (216.58.200.174): icmp_seq=1 ttl=116 time=3.30 ms
+64 bytes from del11s06-in-f14.1e100.net (216.58.200.174): icmp_seq=2 ttl=116 time=5.12 ms
+64 bytes from del11s06-in-f14.1e100.net (216.58.200.174): icmp_seq=3 ttl=116 time=4.93 ms
+
+--- google.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 3.298/4.448/5.118/0.817 ms
+
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> google.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 2994
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;google.com.			IN	A
+
+;; ANSWER SECTION:
+google.com.		65	IN	A	216.58.200.174
+
+;; Query time: 1 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Tue Sep 30 11:21:09 IST 2025
+;; MSG SIZE  rcvd: 55
+
+HTTP/2 200 
+content-type: text/html
+etag: "84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"
+last-modified: Mon, 13 Jan 2025 20:11:20 GMT
+cache-control: max-age=86000
+date: Tue, 30 Sep 2025 05:51:11 GMT
+alt-svc: h3=":443"; ma=93600
+
