@@ -1,4 +1,74 @@
  Terraform AWS Assignment Documentation
+ 
+ 
+ Quest:- Create VPC with:
+* 2 public + 2 private subnets (multi-AZ)
+Internet Gateway + NAT Gateway
+* Deploy ALB (public)
+Route HTTP traffic to backend
+* Create Launch Template + Auto Scaling Group
+Instances in private subnet
+* Min: 2, Max: 5
+Install Nginx
+Configure Security Groups
+* Allow HTTP → ALB
+* Allow ALB → EC2 only
+Create RDS (MySQL/Postgres)
+* Private subnet
+* Accessible only from EC2
+Create S3 bucket
+* Enable versioning
+
+
+Use modules (VPC, EC2, RDS)
+Use variables (region, instance type, DB name)
+Support dev & prod environments
+Conditional logic:
+* dev → 1 instance
+* prod → autoscaling
+Add lifecycle rule
+* Prevent DB deletion
+
+---------------------------
+ 
+ 
+Task: Deploy EC2 using Terraform
+
+Steps:
+
+Installed Terraform and AWS CLI
+Configured AWS CLI using IAM credentials
+Created main.tf with EC2 resource
+Ran:
+terraform init
+terraform plan
+terraform apply
+
+
+.....................................................
+Task: VPC Setup using Terraform
+
+Steps:
+
+Created VPC using CIDR block
+Created public and private subnet
+Attached Internet Gateway
+Configured route table for public subnet
+Used S3 as remote backend
+
+
+........................................................
+Task: Multi-AZ VPC with NAT Gateway
+
+Steps:
+
+Added second public and private subnet across AZs
+Created NAT Gateway with Elastic IP
+Configured private route table
+Enabled private subnet outbound internet
+
+
+.......................................................
 🔹 1. Objective
 
 The aim of this assignment was to create a complete cloud infrastructure using Amazon Web Services with the help of Terraform.
